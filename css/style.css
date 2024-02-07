@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Some Font Name";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/some-font.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  height: 0;
+  width: 0;
+}
+
+header {
+  background-color: #000000;
+}
+
