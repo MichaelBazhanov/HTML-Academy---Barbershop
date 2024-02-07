@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Бреем бороды за недорого!" />
     <meta name="keywords" content="Barbershop" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Барбершоп «Бородинский»</title>
   </head>
@@ -36,8 +42,8 @@
     <main>
       <h1>Барбершоп «Бородинский»</h1>
 
-      <section>
-        <h2>Приемущества</h2>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <ul>
           <li>
@@ -88,75 +94,129 @@
 
       <section>
         <h2>ФОТОГАЛЕРЕЯ</h2>
-        <ul>
-          <li>
-            <img
-              src="img/slider-photo/photo.jpg"
-              width="286"
-              height="164"
-              alt="Фото"
-            />
-          </li>
-          <li>
-            <img
-              src="img/slider-photo/photo.jpg"
-              width="286"
-              height="164"
-              alt="Фото"
-            />
-          </li>
-          <li>
-            <img
-              src="img/slider-photo/photo.jpg"
-              width="286"
-              height="164"
-              alt="Фото"
-            />
-          </li>
-        </ul>
 
-        <button type="button">НАЗАД</button>
+        <figure>
+          <a href="#">
+            <img
+              src="img/slider-photo/photo.jpg"
+              width="286"
+              height="164"
+              alt="Фото"
+            />
+          </a>
+        </figure>
+
+        <button type="button" disabled>НАЗАД</button>
         <button type="button">ВПЕРЕД</button>
       </section>
+
       <section>
         <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+
+        <p>
+          БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br />
+          ТЕЛЕФОН: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
+        </p>
+        <p>
+          ВРЕМЯ РАБОТЫ: <br />
+          ПН—ПТ: С 10:00 ДО 22:00 <br />
+          СБ—ВС: С 10:00 ДО 19:00
+        </p>
+
+        <a href="blank.html">КАК ПРОЕХАТЬ</a>
+        <a href="blank.html">ОБРАТНАЯ СВЯЗЬ</a>
       </section>
       <section>
         <h2>ЗАПИСАТЬСЯ</h2>
+
+        <p>
+          УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ <br />
+          С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+        </p>
+
+        <!-- <label for="">
+          <span>ДАТА</span>
+          <input type="text" name="" id="" />
+        </label> -->
+
+        <button type="submit">ОТПРАВИТЬ</button>
       </section>
     </main>
 
     <footer>
-      <ul>
-        <li>БАРБЕРШОП «БОРОДИНСКИЙ»</li>
-        <li>
-          <address>
-            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-          </address>
-        </li>
-        <li><a href="blank.html">КАК НАС НАЙТИ?</a></li>
-        <li><a href="tel:+78126660266">ТЕЛЕФОН: +7 (812) 666-02-66</a></li>
-      </ul>
+      <section>
+        <h2>Как нас найти</h2>
+        <p>
+          БАРБЕРШОП «БОРОДИНСКИЙ» <br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br />
+          <a href="blank.html">КАК НАС НАЙТИ?</a> <br />
+          ТЕЛЕФОН: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
+        </p>
+      </section>
 
-      <article>
-        <h4>ДАВАЙТЕ ДРУЖИТЬ!</h4>
+      <section>
+        <h2>ДАВАЙТЕ ДРУЖИТЬ!</h2>
         <ul>
           <li>
-            <a href="blank.html" class="visually-hidden">Вконтакте</a>
+            <a href="#" class="visually-hidden">Вконтакте</a>
           </li>
           <li>
-            <a href="blank.html" class="visually-hidden">Фейсбук</a>
+            <a href="#" class="visually-hidden">Фейсбук</a>
           </li>
           <li>
-            <a href="blank.html" class="visually-hidden">Инстаграмм</a>
+            <a href="#" class="visually-hidden">Инстаграмм</a>
           </li>
         </ul>
-      </article>
+      </section>
 
-      <article>
-        <h4>РАЗРАБОТАНО:</h4>
+      <section>
+        <h2>РАЗРАБОТАНО:</h2>
         <a href="blank.html">HTML ACADEMY</a>
-      </article>
+      </section>
     </footer>
+
+    <!-- Это попап ЛОГИН который открывается на клику на кнопку -->
+    <section>
+      <h2>Личный кабинет</h2>
+      <p>ВВедите пожалуйста свой логин и пароль</p>
+      <form action="#" method="post">
+        <p>
+          <label for="login-login">Логин</label>
+          <input
+            type="email"
+            id="login-login"
+            name="login"
+            placeholder="email@exampl.com"
+          />
+        </p>
+        <p>
+          <label for="login-password">Пароль</label>
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="*********"
+          />
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember" />
+            Запомни меня
+          </label>
+        </p>
+        <a href="blank.html">ЗАБЫЛ ПАРОЛЬ</a>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <!-- Это попап КАРТА который открывается на клику на кнопку -->
+    <section>
+      <h2>Как до вас доехать?</h2>
+      <!-- Здесь будет карта -->
+      <button type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
