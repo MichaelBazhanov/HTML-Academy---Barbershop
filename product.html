@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Бреем бороды за недорого!" />
-    <meta name="keywords" content="Barbershop" />
+    <meta
+      name="description"
+      content="Выгодно купить набор для путешествий «Baxter of California»"
+    />
+    <meta name="keywords" content="Baxter of California" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Барбершоп «Бородинский» - Продукт</title>
+    <title>
+      Барбершоп «Бородинский» - Продукт - Набор для путешествий «Baxter of
+      California»
+    </title>
   </head>
   <body>
     <header>
@@ -18,13 +24,13 @@
                 src="img/logo-index.svg"
                 width="171"
                 height="155"
-                alt="Перейти на главную страницу сайта - Барбершоп «Бородинский»>"
+                alt="Логотип барбершоп «Бородинский»>"
             /></a>
           </li>
           <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="blank.html">НОВОСТИ</a></li>
-          <li><a href="blank.html">ПРАЙС-ЛИСТ</a></li>
-          <li><a href="blank.html">МАГАЗИН</a></li>
+          <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="catalog.html">МАГАЗИН</a></li>
           <li><a href="blank.html">КОНТАКТЫ</a></li>
         </ul>
       </nav>
@@ -33,9 +39,92 @@
     </header>
 
     <main>
-      <h1>Product</h1>
+      <h1>Набор для путешествий «Baxter of California»</h1>
+
+      <ul class="breadсrumbs">
+        <li><a href="index.html">ГЛАВНАЯ</a></li>
+        <li><a href="catalog.html">МАГАЗИН</a></li>
+        <li><a href="catalog.html">СРЕДСТВА ДЛЯ УХОДА</a></li>
+        <li>набор для путешествий «Baxter of California»</li>
+      </ul>
+
+      <section>
+        <h2>??????????</h2>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section>
+        <h2>Как нас найти</h2>
+        <p>
+          БАРБЕРШОП «БОРОДИНСКИЙ» <br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br />
+          <a href="blank.html">КАК НАС НАЙТИ?</a> <br />
+          ТЕЛЕФОН: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>ДАВАЙТЕ ДРУЖИТЬ!</h2>
+        <ul>
+          <li>
+            <a href="#" class="visually-hidden">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#" class="visually-hidden">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#" class="visually-hidden">Инстаграмм</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>РАЗРАБОТАНО:</h2>
+        <a href="blank.html">HTML ACADEMY</a>
+      </section>
+    </footer>
+
+    <!-- Это попап ЛОГИН который открывается на клику на кнопку -->
+    <section>
+      <h2>Личный кабинет</h2>
+      <p>ВВедите пожалуйста свой логин и пароль</p>
+      <form action="#" method="post">
+        <p>
+          <label for="login-login">Логин</label>
+          <input
+            type="email"
+            id="login-login"
+            name="login"
+            placeholder="email@exampl.com"
+          />
+        </p>
+        <p>
+          <label for="login-password">Пароль</label>
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="*********"
+          />
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember" />
+            Запомни меня
+          </label>
+        </p>
+        <a href="blank.html">ЗАБЫЛ ПАРОЛЬ</a>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <!-- Это попап КАРТА который открывается на клику на кнопку -->
+    <section>
+      <h2>Как до вас доехать?</h2>
+      <!-- Здесь будет карта -->
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
